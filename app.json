@@ -1,6 +1,6 @@
 {
-  "name": "Apex Framework API",
-  "description" : "A Heroku demo to expose a REST API consumed in the APEX Connector",
+  "name": "",
+  "description" : "A node demo to subscfibe to events and publish in kafka",
   "repository":"https://github.com/arieunier/apexconnector",
   "keywords": ["python", "postgres", "redis", "connect"], 
   "formation": {
@@ -10,11 +10,12 @@
     }
   },
   "addons": [
-    {"plan": "heroku-postgresql:hobby-dev"}
+    {"plan": "heroku-postgresql:hobby-dev"},
+    {"plan": "heroku-kafka:basic-0"},
   ],
   "buildpacks": [
     {
-      "url": "heroku/python"
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
     }
   ] 
 }
