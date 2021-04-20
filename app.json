@@ -10,8 +10,7 @@
     }
   },
   "addons": [
-    {"plan": "heroku-postgresql:hobby-dev"},
-    {"plan": "heroku-kafka:basic-0"},
+    {"plan": "heroku-postgresql:hobby-dev"}
   ],
   "buildpacks": [
     {
